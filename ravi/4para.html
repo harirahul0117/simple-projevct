@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+<link rel="shortcut icon" href="r2.jpeg" type="image/x-icon">
+    <style>
+      .A{
+        text-align: center;  
+      
+        background-color: blanchedalmond;
+       }
+        body {
+          background-image: url('r2.jpeg');
+            background-size: cover; /* Optional: Ensures the image covers the entire background */
+          }
+        .center-text {
+            text-align: center;  
+            font-size: 40px;
+            background-color: blanchedalmond;
+        }
+        .center-text1{
+            text-align: center;  
+            font-size: 30px;
+        }
+#a{
+    font-size: large;
+    font-color: solid black;
+    text-items: center;
+}
+#b{
+    align-items: center;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .image-container img {
+    margin: 10px;
+    max-width: 500px;
+    max-height: 500px;
+  }
+  .ravi{
+    color: antiquewhite;
+  }
+  #hari{
+    font-size: 20px;
+  }
+    </style>
+</head>
+<body> 
+    <hr style="border-top: 10px dotted rgb(143, 122, 122);">
+    <div class="center-text">
+        <p>MINI PROJECT</p>
+      </div>
+   <hr style="border-top: 10px dotted #7f6363;">
+
+   <div class="ravi">
+<h1>S. RAVITEJA</h1>
+<div class="center-text1">
+<span id="c">                                      📞 6305646950</span> </div>
+
+<br>
+<div class="A">
+  <a href="home.html">HOME</a>
+  <a  href="1para.html"><h2>1.Create an IAM role to access AWS Glue + S3+Athena</h2></a>
+  <a href="2para.html"><h2>2.UPLOAD SOURCE CSV FILES TO AMAZON S3</h2></a> 
+  <a  href="3para.html"><h2>3.START THE AWS GLUE DATABASE</h2></a>
+  <a href="4para.html"><h2>4.CREATE AND RUN GLUE CRAWLERS</h2></a>
+  <a href="5para.html"> <h2>5.DEFINE GLUE JOBS</h2></a>
+  </div>
+
+
+<br>
+<br>
+
+  <h2>👉CREATE AND RUN GLUE CRAWLERS</h2>
+<h2>▶For SCANNING all available DATA we CREATE CRAWLERS after CREATING DB</h2>
+<h2>▶In AWS GLUE BAR CLICK on BLUE COLORED ADD CRAWLER BUTTON </h2>
+<h2>▶GIVE CRAWLER A NAME AND LEAVE IT </h2>
+<h2>▶THEN MAKE DATSTORE OPTION AS S3</h2>
+<h2>▶IN IAM BAR CHOOSE UR ROLE </h2>
+<h2>▶Then SPECIFY ALL DETAILS which are mentioned </h2>
+<h2>▶Then AFTER CRAWLER IS CREATED THEN CLICK ON RUN CRAWLER BAR</h2>
+<h2>▶Keep an Eye on the status of the CRAWLER U CREATED</h2>
+<h2>▶Then CHECK IF TABLES ARE CREATED AUTOMATICALLY</h2>
+</div>
+
+<button id="showImagesButton">Show Image</button>
+
+<div class="image-container" id="imageContainer"></div>
+
+<script>
+  // JavaScript code to handle button click and show images
+  const images = [
+    'r5.jpg'
+    // Add more image filenames as needed
+  ];
+
+  const imageContainer = document.getElementById('imageContainer');
+  const showImagesButton = document.getElementById('showImagesButton');
+
+  showImagesButton.addEventListener('click', function() {
+    // Clear previous images
+    imageContainer.innerHTML = '';
+
+    // Append images to the image container
+    images.forEach(image => {
+      const imgElement = document.createElement('img');
+      imgElement.src = image;
+      imageContainer.appendChild(imgElement);
+    });
+  });
+</script>
+
+</body>
+</html>

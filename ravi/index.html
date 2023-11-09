@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+<link rel="shortcut icon" href="r2.jpeg" type="image/x-icon">
+    <style>
+       
+        body {
+          background-image: url('r2.jpeg');
+            background-size: cover; /* Optional: Ensures the image covers the entire background */
+          }
+        .center-text {
+            text-align: center;  
+            font-size: 40px;
+            background-color: blanchedalmond;
+        }
+        .center-text1{
+            text-align: center;  
+            font-size: 30px;
+        }
+#a{
+    font-size: large;
+    font-color: solid black;
+    text-items: center;
+}
+#b{
+    align-items: center;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .image-container img {
+    margin: 10px;
+    max-width: 500px;
+    max-height: 500px;
+  }
+  .ravi{
+    color: antiquewhite;
+  }
+    </style>
+</head>
+<body> 
+    <hr style="border-top: 10px dotted rgb(143, 122, 122);">
+    <div class="center-text">
+        <p>MINI PROJECT</p>
+      </div>
+   <hr style="border-top: 10px dotted #7f6363;">
+
+   <div class="ravi">
+<h1>S. RAVITEJA</h1>
+<div class="center-text1">
+<span id="c">                                     📞 6305646950</span> </div>
+
+  <h2>👉Create an IAM role to access AWS Glue + S3+Athena</h2>
+<h2>▶OPEN IAM BAR and CLICK ON ROLE</h2>
+<h2>▶CREATE ROLE and SELECT A GLUE SERVICE                that suits to ROLE </h2>
+<h2>▶In SELECT UR CASE SECTION CLICK ON GLUE</h2>
+<h2>▶from ATTACH PERMISSION POLICY SELECT AWS GLUE SERVICE ROLE</h2>
+<h2>▶LEAVE TAG OPTION AND CREATE ROLE then ROLE will be attached to GLUE</h2>
+</div>
+
+<button id="showImagesButton">Show Image</button>
+
+<div class="image-container" id="imageContainer"></div>
+
+<script>
+  // JavaScript code to handle button click and show images
+  const images = [
+    'r1.jpg'
+    // Add more image filenames as needed
+  ];
+
+  const imageContainer = document.getElementById('imageContainer');
+  const showImagesButton = document.getElementById('showImagesButton');
+
+  showImagesButton.addEventListener('click', function() {
+    // Clear previous images
+    imageContainer.innerHTML = '';
+
+    // Append images to the image container
+    images.forEach(image => {
+      const imgElement = document.createElement('img');
+      imgElement.src = image;
+      imageContainer.appendChild(imgElement);
+    });
+  });
+</script>
+
+</body>
+</html>
